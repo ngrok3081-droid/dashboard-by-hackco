@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+
+</head>
+<body>
+
+    <!-- نموذج تسجيل الدخول -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-form">
+            <h2>تسجيل الدخول</h2>
+            <div class="form-group">
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" placeholder="أدخل اسم المستخدم">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور">
+                <i class="fas fa-lock"></i>
+            </div>
+            <button class="login-btn" id="loginBtn">تسجيل الدخول</button>
+            <div class="error-message" id="errorMessage">اسم المستخدم أو كلمة المرور غير صحيحة</div>
+        </div>
+    </div>
+
+
+    <div class="menu">
+    
+
+        <ul>
+            <li class="profile">
+                <div class="image-box">
+                    <img src="my_image.jpg" alt="logo">
+                </div>
+                <h2>Ali Abdulrahman</h2>
+            </li>
+            <li>
+                <a href="index.html" class="active">
+                    <i class="fas fa-home"></i>
+                    <p>dashboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-user-group"></i>
+                    <p>clients</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-table"></i>
+                    <p>products</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-chart-pie"></i>
+                    <p>charts</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fas fa-star"></i>
+                    <p>favorite</p>
+                </a>
+            </li>
+            <li>
+                <a href="" class="setting">
+                    <i class="fas fa-cog"></i>
+                    <p>settings</p>
+                    <div class="settings-panel" id="settingsPanel">
+                        <ul>
+                            <li>Change Theme</li>
+                            <li>Change Photo</li>
+                            <li>Change Email</li>
+                            <li>Developer Options</li>
+                        </ul>
+                    </div>
+                    
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+            <li >
+                <a href="">
+                    <i ></i>
+                    <a href="https://jolly-donut-0358a8.netlify.app/"  class="btn">click here</a>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="content">
+        <div class="title-info">
+            <p>dashboard</p>
+            <i class="fas fa-chart-bar"></i>
+
+        </div>
+
+        <div class="data-info">
+            <div class="box">
+                <i class="fas fa-user"></i>
+                <div class="data">
+                    <p>user</p>
+                    <span>100</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-pen"></i>
+                <div class="data">
+                    <p>posts</p>
+                    <span>774</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-table"></i>
+                <div class="data">
+                    <p>products</p>
+                    <span>34</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-dollar"></i>
+                <div class="data">
+                    <p>revenue</p>
+                    <span>$126</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-info">
+            <p>products</p>
+            <i class="fas fa-table"></i>
+
+        </div>
+         <div class="new">
+            <input type="text" id="newName" placeholder="Prudoct name">
+            <input type="number" id="newPrice" placeholder="price">
+            <button id="addproduct">Add Prudoct</button>
+
+         </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>product</th>
+                    <th>price</th>
+                    <th>count</th>
+                    <th>Total</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tv</td>
+                    <td><span class="price">$142</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>mobile Hwawi</td>
+                    <td><span class="price">$300</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>tv</td>
+                    <td><span class="price">$142</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Headphone</td>
+                    <td><span class="price">$50</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td><span class="price">$400</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Laptob</td>
+                    <td><span class="price">$800</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Adapter</td>
+                    <td><span class="price">$30</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+                <tr>
+                    <td>Switch</td>
+                    <td><span class="price">$90</span></td>
+                    <td class="count"><input type="number" class="counts"></td>
+                    <td class="total"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+  <script src="script.js"></script>  
+</body>
+</html> 
